@@ -167,13 +167,7 @@ find_package(Boost REQUIRED COMPONENTS filesystem system program_options)
 find_library(LIBUV_LIBRARY NAMES libuv1)
 enable_testing()
 
-include(cmake/CodeCoverage.cmake)
-include(cmake/CLangFormat.cmake)
-include(cmake/CLangTidy.cmake)
 include(cmake/Target.cmake)
-include(cmake/DumpConfig.cmake)
-include(cmake/Jemalloc.cmake)
-include(cmake/ApacheArrow.cmake)
 include(cmake/AddCrate.cmake)
 configure_file(cmake/CTestCustom.cmake ${CMAKE_BINARY_DIR} @ONLY)
 
